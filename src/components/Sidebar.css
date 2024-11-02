@@ -1,0 +1,116 @@
+
+.sidebar-container .app-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.sidebar-container .sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar-container .sidebar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-container .sidebar .logo img.logo-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.sidebar-container .sidebar .logo h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+.sidebar-container .sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.sidebar-container .sidebar nav ul li {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-container .sidebar nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.sidebar-container .sidebar nav ul li a img.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.sidebar-container .sidebar nav ul li.active a {
+  font-weight: bold;
+  color: black;
+  background-color: rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+
+.sidebar-container .sidebar nav ul li a:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+
+.sidebar-container .sidebar .logout {
+  margin-top: 350px;
+}
+
+.sidebar-container .sidebar .logout button {
+  background-color: transparent;
+  color: #ff5757;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+}
+
+.sidebar-container .sidebar .logout button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-container .sidebar .logout button:hover {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+
+.sidebar-container .main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}

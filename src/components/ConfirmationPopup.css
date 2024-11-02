@@ -1,0 +1,42 @@
+
+.confirmation-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirmation-popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 450px; 
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.confirmation-popup-content p {
+  font-size: 18px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.confirmation-button {
+  padding: 12px 25px; 
+  font-size: 16px; 
+  border-radius: 6px;
+  background-color: #0096c7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmation-button:hover {
+  background-color: #0077a2; 
+}

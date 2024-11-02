@@ -1,0 +1,307 @@
+
+.add-task-container .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-task-container .modal-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-container h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.add-task-container .date-picker-container {
+  position: relative;
+}
+
+.add-task-container .datepicker-overlay {
+  position: absolute;
+  top: -320px;
+  left: 90px;
+  z-index: 1001;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.add-task-container .react-datepicker__header {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.add-task-container .react-datepicker__day--selected,
+.add-task-container .react-datepicker__day--keyboard-selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-task-container .react-datepicker__day:hover {
+  background-color: #e6f2ff;
+}
+
+.add-task-container .react-datepicker__day--today {
+  font-weight: bold;
+}
+
+.add-task-container .react-datepicker__month-container {
+  border-radius: 8px;
+}
+
+
+.add-task-container .form-group {
+  margin-bottom: 20px;
+}
+
+.add-task-container .title-input,
+.add-task-container .assign-to-input,
+.add-task-container .date-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.add-task-container .title-input::placeholder,
+.add-task-container .checklist-task-input::placeholder {
+  color: #aaa;
+}
+
+.add-task-container .checklist-task-input {
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+}
+
+.add-task-container .date-button {
+  background-color: #f0f0f0;
+  color: #707070;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.add-task-container .date-button:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+
+.add-task-container .priority-options {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.add-task-container .priority-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  min-width: 150px;
+}
+
+.add-task-container .priority-button:hover {
+  border-color: #007bff;
+}
+
+.add-task-container .priority-button.selected {
+  border: 2px solid #007bff;
+}
+
+.add-task-container .priority-button .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+
+.assign-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.assign-to-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #333;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.assign-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 8px 0;
+}
+
+.assign-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.assign-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.avatar-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+  color: #0096c7;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.email-text {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.assign-button {
+  padding: 5px 10px;
+  background-color: #0096c7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.assign-button:hover {
+  background-color: #007b9e;
+}
+
+
+.add-task-container .checklist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 14px;
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.add-task-container .task-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.add-task-container .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-task-container .delete-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.add-task-container .add-new-task {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.add-task-container .form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.add-task-container .action-buttons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.add-task-container .cancel-button,
+.add-task-container .save-button {
+  width: 100px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.add-task-container .cancel-button {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+
+.add-task-container .cancel-button:hover {
+  background-color: rgba(255, 87, 87, 0.1);
+}
+
+.add-task-container .save-button {
+  background-color: #00bfa5;
+  border: none;
+  color: white;
+}
+
+.add-task-container .save-button:hover {
+  background-color: #00a991;
+}

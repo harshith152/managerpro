@@ -1,0 +1,80 @@
+
+.add-person-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.add-person-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 450px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.email-input {
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.suggestions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 100px;
+  overflow-y: auto;
+  position: absolute;
+  width: 300px;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+  width: 200px;
+
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-button, .add-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: none;
+  border: 2px solid red;
+  color: red;
+}
+
+.add-button {
+  background-color: #0096c7;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,130 @@
+
+.share-page-container .shared-task-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafc;
+}
+
+.share-page-container .shared-task-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+
+.share-page-container .task-card-header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; 
+  text-align: left; 
+  margin-bottom: 20px;
+}
+
+.share-page-container .priority-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; 
+}
+
+.share-page-container .priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.share-page-container .priority-dot.high { background-color: #f28b82; }
+.share-page-container .priority-dot.moderate { background-color: #aecbfa; }
+.share-page-container .priority-dot.low { background-color: #ccff90; }
+
+.share-page-container .priority-label {
+  font-size: 14px;
+  color: #707070;
+}
+
+.share-page-container .task-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0; 
+}
+
+
+.share-page-container .checklist-heading {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.share-page-container .checklist-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.share-page-container .checklist-items {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+
+.share-page-container .checklist-item {
+  display: flex;
+  align-items: flex-start; 
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.share-page-container .checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.share-page-container .checklist-item span {
+  font-size: 14px;
+  color: #333;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+
+.share-page-container .due-date {
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.share-page-container .high-priority-due-date {
+  background-color: #f28b82;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.share-page-container .normal-priority-due-date {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.share-page-container .task-not-found {
+  font-size: 20px;
+  color: #ff5757;
+  text-align: center;
+}

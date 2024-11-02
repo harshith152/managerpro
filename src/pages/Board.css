@@ -1,0 +1,236 @@
+
+.board-container {
+  padding: 10px;
+  padding-bottom: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.board-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 10;
+  padding: 1px;
+  box-shadow: 0px;
+  width: 1100px;
+}
+
+.board-container header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.board-title-section {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  gap: 15px;
+}
+
+.board-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.add-people-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.add-people-icon {
+  width: 100px;
+  height: 20px;
+}
+
+.task-columns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  height: calc(100vh - 160px);
+}
+
+
+.column {
+  min-width: 300px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.column-header-buttons {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+
+.add-task-button {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.collapse-button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.task-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.task-card p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+
+.priority-section {
+  display: flex;
+  align-items: center;
+}
+
+.priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.priority-dot.high {
+  background-color: #f28b82;
+}
+
+.priority-dot.moderate {
+  background-color: #aecbfa;
+}
+
+.priority-dot.low {
+  background-color: #ccff90;
+}
+
+.priority-label {
+  font-size: 12px;
+  color: #707070;
+}
+
+
+.task-status-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.status-button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+}
+
+.status-button.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+  overflow-wrap: break-word;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.checklist-item span {
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+}
+
+
+.high-priority-due-date {
+  background-color: #f28b82;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.done-due-date {
+  background-color: #63c05b;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.moderate-priority-due-date,
+.low-priority-due-date,
+.normal-priority-due-date {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #666;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}

@@ -1,0 +1,203 @@
+
+.task-card-container .task-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+.task-card-container .task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.task-card-container .priority-section {
+  display: flex;
+  align-items: center;
+}
+
+.task-card-container .priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.task-card-container .priority-dot.high {
+  background-color: #f28b82;
+}
+
+.task-card-container .priority-dot.moderate {
+  background-color: #aecbfa;
+}
+
+.task-card-container .priority-dot.low {
+  background-color: #ccff90;
+}
+
+.task-card-container .priority-label {
+  font-size: 12px;
+  color: #707070;
+}
+
+
+.task-card-container .menu-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+}
+
+.task-card-container .dropdown-menu {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  width: 100px;
+}
+
+.task-card-container .dropdown-menu p {
+  margin: 0;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.task-card-container .dropdown-menu p:hover {
+  background-color: #f0f0f0;
+}
+
+.task-card-container .dropdown-menu p.delete {
+  color: red;
+}
+
+.task-card-container .task-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+.task-card-container .checklist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-card-container .checklist-info {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.task-card-container .checklist-items {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task-card-container .checklist-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+  overflow-wrap: break-word;
+}
+
+
+.task-card-container .checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.task-card-container .checklist-item span {
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+}
+
+
+.task-card-container .due-date {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #fff; 
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0; 
+}
+
+
+.task-card-container .high-priority-due-date {
+  background-color: #f28b82;
+}
+
+
+.task-card-container .done-due-date {
+  background-color: #63c05b;
+}
+
+
+.task-card-container .moderate-priority-due-date,
+.task-card-container .low-priority-due-date,
+.task-card-container .normal-priority-due-date {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+
+.task-card-container .due-status-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.task-card-container .task-status-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto; 
+}
+
+.task-card-container .status-button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+}
+
+.task-card-container .status-button.active {
+  background-color: #d0d0d0;
+  font-weight: bold;
+  color: #333;
+}
